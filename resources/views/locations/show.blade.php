@@ -5,13 +5,13 @@
 @section('content')
 <div class="row">
 	<div class="col-12">
-		<div class="d-flex justify-content-between align-items-center mb-4">
-			<h1><i class="fas fa-map-marker-alt me-2"></i>{{ $location->name }}</h1>
+		<div class="d-flex justify-content-between align-items-center mb-4 text-white rounded p-3" style="background-color: #023c77ff;">
+			<h1 class="mb-0"><i class="fas fa-map-marker-alt me-2"></i>{{ $location->name }}</h1>
 			<div>
-				<a href="{{ route('locations.edit', $location->id) }}" class="btn btn-warning me-2">
+				<a href="{{ route('locations.edit', $location->id) }}" class="btn btn-light me-2">
 					<i class="fas fa-edit me-1"></i>Editar
 				</a>
-				<a href="{{ route('locations.index') }}" class="btn btn-outline-secondary">
+				<a href="{{ route('locations.index') }}" class="btn btn-light">
 					<i class="fas fa-arrow-left me-1"></i>Voltar
 				</a>
 			</div>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/854/854929.png" type="image/x-icon">
     <title>@yield('title', 'Laravel Maps App')</title>
 
     <!-- Bootstrap CSS -->
@@ -25,14 +26,37 @@
         .location-card:hover {
             transform: translateY(-2px);
         }
+
+        h1{
+            color: #ffffffff;
+        }
+
+        .cabeca{
+            background-color: #023c77ff;
+        }
+
+        img{
+            height: 40px;
+            width: 60px;
+            padding-right: 20px;
+        }
+
+        .palavra{
+            color: #ffffffff;
+        }
+        .topo{
+            background-color: #cececeff;
+        }
+        
+
     </style>
     @yield('styles')
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<body class="topo ">
+    <nav class="navbar navbar-expand-lg navbar-dark cabeca">
         <div class="container">
             <a class="navbar-brand" href="{{ route('locations.index') }}">
-                <i class="fas fa-map-marker-alt me-2"></i>
+                <img src="https://cdn-icons-png.flaticon.com/512/854/854929.png" alt="logo">
                 Laravel Maps App
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -41,12 +65,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('locations.index') }}">
+                        <a class="nav-link palavra" href="{{ route('locations.index') }}">
                             <i class="fas fa-list me-1"></i>Locais
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('locations.create') }}">
+                        <a class="nav-link palavra" href="{{ route('locations.create') }}">
                             <i class="fas fa-plus me-1"></i>Adicionar Local
                         </a>
                     </li>
